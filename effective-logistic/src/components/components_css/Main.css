@@ -1,0 +1,25 @@
+.parallax {
+    min-height: 1200px; 
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-image: url('../components_css/assets/delivery.jpg'); 
+}
+
+
+.content-text {
+    color: white;
+    font-size: 1rem;
+    text-align: center;
+    padding: 10px;
+    font-family: 'Inter', sans-serif;
+    background-color: var(--bg-color);
+}
+
+.wave {
+    position: absolute;
+    bottom: -250px;
+    width: 100%;
+    z-index: 500;
+}
