@@ -1,0 +1,23 @@
+.navbar {
+    background-color: #f8f9fa34;
+    filter: blur(0.5px);
+    backdrop-filter: blur(0.5px);
+    color: #e9e9e9;
+    font-size: 1.2rem;
+    position: fixed;
+    width: 100%;
+    z-index: 1000;
+    height: 15%;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.2), 0 2px 4px 0 rgba(0, 0, 0, 0.19);
+}
+
+ul {
+    display: flex;
+    justify-content: space-around;
+    list-style-type: none;
+    padding: 0;
+}
