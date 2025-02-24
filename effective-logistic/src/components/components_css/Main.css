@@ -1,3 +1,11 @@
+#root {
+    font-family: "Questrial", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 1.5rem;
+  }
+
+
 .parallax {
     min-height: 1200px; 
     background-attachment: fixed;
@@ -7,6 +15,35 @@
     background-image: url('../components_css/assets/delivery.jpg'); 
 }
 
+.text-main {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: white;
+    text-align: center;
+    width: 40%;
+}
+
+.highlight {
+    color: var(--bg-color);
+    font-weight: bold;
+}
+
+.text-main-p {
+    font-size: 1.5rem;
+    font-family: 'Questrial', sans-serif;
+    padding: 10px;
+}
+
+h1 {
+    font-size: 3.5em;
+    line-height: 1.1;
+    text-align: center;
+    padding: 10px;
+    font-family: 'Questrial', sans-serif;
+    color: white;
+}
 
 .content-text {
     color: white;
@@ -17,9 +54,41 @@
     background-color: var(--bg-color);
 }
 
+.btn-main {
+    background-color: var(--bg-color);
+    color: white;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    font-family: 'Questrial', sans-serif;
+    font-size: 0.8rem;
+    cursor: pointer;
+    transition: background-color 0.3s, transform 0.16s;
+    text-decoration: none;
+    font-size: 20px;
+    display: inline-block;
+    width: 250px;
+    height: 30px;
+    font-weight: 700;
+}
+
+.btn-main:hover {
+    background-color: #ff4d4d;
+    text-decoration: none;
+    transform: scale(1.05);
+}
+
+
+.btn-main:focus {
+    outline: none;
+}
+
+
 .wave {
     position: absolute;
     bottom: -250px;
     width: 100%;
     z-index: 500;
+    margin-bottom: -10px;
 }
+
