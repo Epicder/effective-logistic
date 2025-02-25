@@ -1,6 +1,9 @@
 import React from 'react';
 import { motion, AnimatePresence } from 'framer-motion';
 import './components_css/Main.css';
+import Box1 from './components_css/assets/boxes-1.png';
+import Box2 from './components_css/assets/boxes-2.png';
+import Delivery1 from './components_css/assets/delivery2.jpg';
 
 function Main() {
   const words = ["rápidos", "efectivos", "seguros", "confiables", "convenientes"];
@@ -50,9 +53,17 @@ function Main() {
 
         <div className='content-text'>
           <h1>¿Quiénes somos?</h1>
-          <p>En Effective Logistic nos encargamos de llevar tu mercancía de manera segura y eficiente.</p>
-          <p>Contamos con una amplia gama de servicios y con personal altamente capacitado para brindarte la mejor experiencia.</p>
-          <p>¡Contáctanos y descubre por qué somos la mejor opción para tus envíos!</p>
+          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Impedit corrupti ratione architecto voluptas est eum eveniet, enim dolor, obcaecati hic tempora labore quibusdam, pariatur vitae minus. In repudiandae quidem illum!</p>
+          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ducimus ullam quasi veniam necessitatibus ea ipsa sint inventore quibusdam quia perferendis adipisci quisquam illum sunt dicta, recusandae ab aliquam tenetur minima.</p>
+        </div>
+        <div className='content-images'>
+          <div className='overlay'>
+            <img src={Box1} alt="Montón de cajas" className='box-1'/>
+            <img src={Box2} alt="Cajas" className='box-2'/>
+          </div>
+          <div className='carousel'>
+            <img src={Delivery1} alt="" />
+          </div>
         </div>
       </div>
     </>
