@@ -6,14 +6,17 @@
   }
 
 
-.parallax {
+.parallax1 {
     min-height: 1200px; 
     background-attachment: fixed;
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
-    background-image: url('../components_css/assets/delivery.jpg'); 
+    background-image: url('../components_css/assets/delivery.jpg');
+    filter: brightness(70%);
 }
+
+
 
 .text-main {
     position: absolute;
@@ -26,8 +29,14 @@
 }
 
 .highlight {
-    color: var(--bg-color);
+    color: white;
     font-weight: bold;
+    background-color: var(--bg-color);
+    border-radius: 9px;
+    padding-left: 9px;
+    padding-right: 9px;
+    padding-top: 2px;
+    padding-bottom: 2px;
 }
 
 .text-main-p {
@@ -43,6 +52,7 @@ h1 {
     padding: 10px;
     font-family: 'Questrial', sans-serif;
     color: white;
+    text-shadow: 2px 2px 2px #000000a2;
 }
 
 
@@ -77,26 +87,23 @@ h1 {
 }
 
 
-.wave {
-    position: absolute;
-    bottom: -250px;
+.content-wave {
+    position: relative;
     width: 100%;
-    z-index: 500;
-    margin-bottom: -10px;
+    height: 15%;
+    top: -400px;
 }
 
 .content-text {
-    position: absolute;
     color: white;
+    background-color: var(--bg-color);
     font-size: 1rem;
     text-align: center;
     padding: 10px;
     font-family: 'Questrial', sans-serif;
     font-size: 20px;
-    background-color: var(--bg-color);
-    width: 50%;
-    margin-left: 30px;
-    margin-top: -50px;
+    margin-top: -20px;
+
 }
 
 .content-images {
@@ -124,6 +131,9 @@ h1 {
     object-fit: cover;
     top: 70px;
     right: 400px;
+    filter: drop-shadow(0px 0px 10px #000000a2);
+
+
 }
 
 .box-2 {
@@ -133,6 +143,7 @@ h1 {
     object-fit: cover;
     top: 70px;
     right: -40px;
+    filter: drop-shadow(0px 0px 10px #000000a2);
 }
 
 .carousel > img {
