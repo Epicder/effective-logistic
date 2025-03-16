@@ -39,6 +39,13 @@
     padding-bottom: 2px;
 }
 
+.highlight-2 {
+    color: rgb(255, 187, 61);
+    font-weight: bold;
+    padding-top: 2px;
+    padding-bottom: 2px;
+}
+
 .text-main-p {
     font-size: 1.5rem;
     font-family: 'Questrial', sans-serif;
@@ -47,6 +54,16 @@
 
 h1 {
     font-size: 3.5em;
+    line-height: 1.1;
+    text-align: center;
+    padding: 10px;
+    font-family: 'Questrial', sans-serif;
+    color: white;
+    text-shadow: 2px 2px 2px #000000a2;
+}
+
+h2 {
+    font-size: 1.6em;
     line-height: 1.1;
     text-align: center;
     padding: 10px;
@@ -106,13 +123,26 @@ h1 {
 
 }
 
+.content-text p {
+    width: 30%;
+    margin: 40px;
+    background-color: #b82c2c;
+    border-radius: 20px;
+    padding: 15px;
+    font-size: 1.4rem;
+    font-family: 'Questrial', sans-serif;
+
+}
+
 .content-images {
     position: relative;
+    top: -600px;
     display: flex;
     justify-content: right;
     align-items: center;
     margin-top: 30px;
     margin-right: 40px;
+
 }
 
 .overlay {
@@ -148,4 +178,68 @@ h1 {
 
 .carousel > img {
     border-radius: 20px;
+}
+
+.service {
+    width: 20%;
+    height: auto;
+    background-color: #b82c2c;
+    border-radius: 25px;
+    padding-left: 5px;
+    padding-right: 5px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    margin: 10px;
+    box-shadow: 0px 0px 20px #1f1515a2;
+    transition: transform 0.16s;
+    cursor: pointer;
+}
+
+.service:hover {
+    transform: scale(1.05);
+}
+
+.service:focus {
+    outline: none;
+}
+
+.services {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 50px;
+}
+
+.services-text {
+   color: white;
+    font-size: 1.5rem;
+    font-family: 'Questrial', sans-serif;
+    text-align: center;
+    padding: 10px;
+    width: 50%;
+    margin: 0 auto;
+}
+
+.brand img {
+    width: 170px;
+    height: 170px;
+    object-fit: contain;
+}
+
+.brand {
+    margin: 10px;
+    filter: drop-shadow(0px 0px 10px #000000a2);
+    transition: transform 0.16s;
+    cursor: pointer;
+  }
+
+
+.brands {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+    width: 90%;
+    margin: 0 auto;
+    background-color: #b82c2c;
 }
