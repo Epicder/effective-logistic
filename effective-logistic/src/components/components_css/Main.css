@@ -46,6 +46,13 @@
     padding-bottom: 2px;
 }
 
+.highlight-3 {
+    color: #b82c2c;
+    font-weight: bold;
+    padding-top: 2px;
+    padding-bottom: 2px;
+}
+
 .text-main-p {
     font-size: 1.5rem;
     font-family: 'Questrial', sans-serif;
@@ -136,54 +143,42 @@ h2 {
 
 .content-images {
     position: relative;
-    top: -600px;
+    top: -500px;
+}
+
+.carousel {
     display: flex;
     justify-content: right;
-    align-items: center;
-    margin-top: 30px;
-    margin-right: 40px;
+    align-items: right;
+    margin-right: 50px;
 
 }
 
-.overlay {
-    width: 15%;
-    height: auto;
-    object-fit: cover;
-    filter: blur(0.4px);
-    position: absolute;
+.carousel img {
+    border-radius: 20px;
     z-index: 1000;
 }
 
-.box-1 {
+.service-wave {
     position: absolute;
-    width: 90%;
-    height: auto;
-    object-fit: cover;
-    top: 70px;
-    right: 400px;
-    filter: drop-shadow(0px 0px 10px #000000a2);
-
+    z-index: 100;
+    top: 100px;
 
 }
 
-.box-2 {
-    position: absolute;
-    width: 70%;
-    height: auto;
-    object-fit: cover;
-    top: 70px;
-    right: -40px;
-    filter: drop-shadow(0px 0px 10px #000000a2);
+.services-section h1 {
+    font-size: 3.5em;
+    line-height: 1.1;
+    text-align: center;
+    padding: 10px;
+    font-family: 'Questrial', sans-serif;
+    color: #141414;
+    text-shadow: 2px 2px 2px #000000a2;
 }
-
-.carousel > img {
-    border-radius: 20px;
-}
-
 .service {
     width: 20%;
     height: auto;
-    background-color: #b82c2c;
+    background-color: #b82c2ccc;
     border-radius: 25px;
     padding-left: 5px;
     padding-right: 5px;
@@ -211,13 +206,24 @@ h2 {
 }
 
 .services-text {
-   color: white;
+   color: #222;
     font-size: 1.5rem;
     font-family: 'Questrial', sans-serif;
     text-align: center;
     padding: 10px;
     width: 50%;
     margin: 0 auto;
+    font-weight: 900;
+}
+
+.brands-section h1 {
+    font-size: 3.5em;
+    line-height: 1.1;
+    text-align: center;
+    padding: 10px;
+    font-family: 'Questrial', sans-serif;
+    color: #141414;
+    text-shadow: 2px 2px 2px #000000a2;
 }
 
 .brand img {
@@ -241,5 +247,6 @@ h2 {
     overflow: hidden;
     width: 90%;
     margin: 0 auto;
-    background-color: #b82c2c;
+    background-color: #b82c2ccc;
+    border-radius: 15px;
 }

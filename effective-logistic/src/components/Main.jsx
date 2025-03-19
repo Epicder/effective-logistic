@@ -34,7 +34,7 @@ function Main() {
     autoplay: true,
     autoplaySpeed: 2000,
     pauseOnHover: true,
-    centerMode: true, // Add this line to center the slides
+    centerMode: true,
     centerPadding: '0',
   };
 
@@ -85,17 +85,12 @@ estámos listos para <span className='highlight-2'>ayudarte</span>.
 </p>
         </div>
           </div>
-        
         <div className='content-images'>
-          <div className='overlay'>
-            <img src={Box1} alt="Montón de cajas" className='box-1'/>
-            <img src={Box2} alt="Cajas" className='box-2'/>
-          </div>
+        <svg viewBox="0 0 1440 590" xmlns="http://www.w3.org/2000/svg" class="transition duration-300 ease-in-out delay-150" className='service-wave'><path d="M 0,600 L 0,150 C 103.21531100478472,120.02870813397129 206.43062200956945,90.05741626794259 311,100 C 415.56937799043055,109.94258373205741 521.4928229665071,159.79904306220095 605,188 C 688.5071770334929,216.20095693779905 749.5980861244019,222.7464114832536 851,216 C 952.4019138755981,209.2535885167464 1094.1148325358852,189.21531100478467 1199,176 C 1303.8851674641148,162.78468899521533 1371.9425837320573,156.39234449760767 1440,150 L 1440,600 L 0,600 Z" stroke="none" stroke-width="0" fill="#db3636" fill-opacity="0.53" class="transition-all duration-300 ease-in-out delay-150 path-0" transform="rotate(-180 720 300)"></path><path d="M 0,600 L 0,350 C 89.96172248803828,356.3636363636364 179.92344497607655,362.7272727272727 265,351 C 350.07655502392345,339.2727272727273 430.26794258373207,309.45454545454544 535,303 C 639.7320574162679,296.54545454545456 769.0047846889952,313.45454545454544 873,331 C 976.9952153110048,348.54545454545456 1055.7129186602872,366.72727272727275 1146,370 C 1236.2870813397128,373.27272727272725 1338.1435406698565,361.6363636363636 1440,350 L 1440,600 L 0,600 Z" stroke="none" stroke-width="0" fill="#db3636" fill-opacity="1" class="transition-all duration-300 ease-in-out delay-150 path-1" transform="rotate(-180 720 300)"></path></svg>
           <div className='carousel'>
             <img src={Delivery1} alt="" />
           </div>
         </div>
-        <svg width="100%" height="100%" id="svg" viewBox="0 0 1440 590" xmlns="http://www.w3.org/2000/svg" class="transition duration-300 ease-in-out delay-150"><path d="M 0,600 L 0,150 C 103.21531100478472,120.02870813397129 206.43062200956945,90.05741626794259 311,100 C 415.56937799043055,109.94258373205741 521.4928229665071,159.79904306220095 605,188 C 688.5071770334929,216.20095693779905 749.5980861244019,222.7464114832536 851,216 C 952.4019138755981,209.2535885167464 1094.1148325358852,189.21531100478467 1199,176 C 1303.8851674641148,162.78468899521533 1371.9425837320573,156.39234449760767 1440,150 L 1440,600 L 0,600 Z" stroke="none" stroke-width="0" fill="#db3636" fill-opacity="0.53" class="transition-all duration-300 ease-in-out delay-150 path-0" transform="rotate(-180 720 300)"></path><path d="M 0,600 L 0,350 C 89.96172248803828,356.3636363636364 179.92344497607655,362.7272727272727 265,351 C 350.07655502392345,339.2727272727273 430.26794258373207,309.45454545454544 535,303 C 639.7320574162679,296.54545454545456 769.0047846889952,313.45454545454544 873,331 C 976.9952153110048,348.54545454545456 1055.7129186602872,366.72727272727275 1146,370 C 1236.2870813397128,373.27272727272725 1338.1435406698565,361.6363636363636 1440,350 L 1440,600 L 0,600 Z" stroke="none" stroke-width="0" fill="#db3636" fill-opacity="1" class="transition-all duration-300 ease-in-out delay-150 path-1" transform="rotate(-180 720 300)"></path></svg>
         <div className='services-section'>
           <h1>Servicios</h1>
           <div className='services'>
@@ -119,9 +114,9 @@ estámos listos para <span className='highlight-2'>ayudarte</span>.
         </div>
         <div className='services-text'>
           <p>            
-Somos tu <span className='highlight-2'>socio estratégico</span> en cada paso del proceso, <span className='highlight-2'>comprometidos con el éxito de tu negocio</span>. Nos
+Somos tu <span className='highlight-3'>socio estratégico</span> en cada paso del proceso, <span className='highlight-3'>comprometidos con el éxito de tu negocio</span>. Nos
  encargamos de que cada envío, desde el momento de la recogida hasta la entrega final, 
-cumpla con los estándares de <span className='highlight-2'>calidad y puntualidad</span> que tus clientes merecen. 
+cumpla con los estándares de <span className='highlight-3'>calidad y puntualidad</span> que tus clientes merecen. 
 ¡Estamos aquí para impulsar tu crecimiento y asegurar que tus productos lleguen siempre como lo prometimos!
           </p>
         </div>
