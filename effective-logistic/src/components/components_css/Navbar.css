@@ -6,13 +6,20 @@
     font-size: 1.2rem;
     position: fixed;
     width: 100%;
-    z-index: 1000;
+    z-index: 1200;
     height: 8%;
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
     align-items: center;
     justify-content: center;
     box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.2), 0 2px 4px 0 rgba(0, 0, 0, 0.19);
+}
+
+.logo img {
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    margin-left: 10px;
 }
 
 ul {

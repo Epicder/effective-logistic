@@ -1,9 +1,7 @@
 import React from 'react';
 import { motion, AnimatePresence } from 'framer-motion';
 import './components_css/Main.css';
-import Box1 from './components_css/assets/boxes-1.png';
-import Box2 from './components_css/assets/boxes-2.png';
-import Delivery1 from './components_css/assets/delivery2.jpg';
+import Delivery1 from './components_css/assets/delivery2.png';
 import Logo from './components_css/assets/bazar.jpg';
 import Logo2 from './components_css/assets/directv.png';
 import Logo3 from './components_css/assets/tiendaronnie.jpg';
@@ -64,9 +62,6 @@ function Main() {
             </p>
               <a href="#contacto" className='btn-main'>Solicitá nuestro servicio</a>
           </div>
-          
-          
-         
         </div>
         <div className='content-wave'>
             <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320">
@@ -142,6 +137,21 @@ cumpla con los estándares de <span className='highlight-3'>calidad y puntualida
             <img src={Logo6} alt="Logo Polanco" />
           </div>
         </Slider>
+        <p>¡Estas son solo una <span className='highlight-3'>pequeña parte</span> de las
+        empresas que trabajan con nosotros, la tuya podría ser
+        <br/>LA MÁS GRANDE!</p>
+      </div>
+      <div className='contact-section'>
+        <h1>¿Te interesa Nuestro servicio?</h1>
+        <a href="#contacto" className='btn-main'>Contáctanos</a>
+        <details>
+          <summary>Conocé sobre nuestras tarifas & Zona de entregas</summary>
+          <iframe src="https://docs.google.com/document/d/1AL8VEnznwGl2NhL0lAoFj0-kpNamNyZI/edit?usp=sharing&ouid=111948878459454852790&rtpof=true&sd=true" width="100%" height="700px"></iframe>
+        </details>
+        <details>
+          <summary>¡Conocé más sobre como trabajamos!</summary>
+            <iframe src="https://docs.google.com/document/d/1nN6fs0QlQXOLCC04x3Ndg6e5roM7Yy3b/edit?usp=sharing&ouid=111948878459454852790&rtpof=true&sd=true" width="100%" height="700px"></iframe>
+        </details>
       </div>
       </div>
     </>
