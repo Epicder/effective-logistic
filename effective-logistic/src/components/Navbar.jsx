@@ -9,10 +9,10 @@ function Navbar() {
             <img src={LogoBrand} alt="logo" />
         </div>
         <ul>
-            <li>Inicio</li>
-            <li>Sobre Nosotros</li>
-            <li>Servicio</li>
-            <li>Contacto</li>
+        <li><a href="#inicio">Inicio</a></li>
+          <li><a href="#sobre-nosotros">Sobre Nosotros</a></li>
+          <li><a href="#servicio">Servicio</a></li>
+          <li><a href="#contacto">Contacto</a></li>
         </ul>
     </div>
     </>

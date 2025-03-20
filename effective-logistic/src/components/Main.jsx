@@ -42,7 +42,7 @@ function Main() {
         <div className='parallax1'></div>
         <div className='parallax'>
           <div className='text-main'>
-            <h1>Logística Effective</h1>
+            <h1 id="inicio">Logística Effective</h1>
             <p className='text-main-p'>
               Somos los mejores y más&nbsp;
               <span className='highlight'>
@@ -68,7 +68,7 @@ function Main() {
               <path fill="#db3636" fillOpacity="1" d="M0,32L48,48C96,64,192,96,288,96C384,96,480,64,576,48C672,32,768,32,864,58.7C960,85,1056,139,1152,165.3C1248,192,1344,192,1392,192L1440,192L1440,320L1392,320C1344,320,1248,320,1152,320C1056,320,960,320,864,320C768,320,672,320,576,320C480,320,384,320,288,320C192,320,96,320,48,320L0,320Z"></path>
             </svg>
             <div className='content-text'>
-          <h1>¿Quiénes somos?</h1>
+          <h1 id="sobre-nosotros">¿Quiénes somos?</h1>
           <p>¡Bienvenidos a Logística effective! 📦<br />
           <br />
 Somos una empresa con <span className='highlight-2'>experiencia</span> en logística y cadetería, especializada en ofrecer soluciones
@@ -87,7 +87,7 @@ estámos listos para <span className='highlight-2'>ayudarte</span>.
           </div>
         </div>
         <div className='services-section'>
-          <h1>Servicios</h1>
+          <h1 id='servicio'>Servicios</h1>
           <div className='services'>
             <div className='service'>
               <h2>Mercado Flex <br />🤝
@@ -141,7 +141,7 @@ cumpla con los estándares de <span className='highlight-3'>calidad y puntualida
         empresas que trabajan con nosotros, la tuya podría ser
         <br/>LA MÁS GRANDE!</p>
       </div>
-      <div className='contact-section'>
+      <div className='contact-section' id='contacto'>
         <h1>¿Te interesa Nuestro servicio?</h1>
         <a href="#contacto" className='btn-main'>Contáctanos</a>
         <details>
