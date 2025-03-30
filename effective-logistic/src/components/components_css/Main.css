@@ -12,8 +12,8 @@
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
-    background-image: url('../components_css/assets/delivery.jpg');
-    filter: brightness(70%);
+    background-image: url('../components_css/assets/deli.jpg');
+    filter: brightness(60%);
 }
 
 
@@ -25,7 +25,8 @@
     transform: translate(-50%, -50%);
     color: white;
     text-align: center;
-    width: 40%;
+    width: 50%;
+
 }
 
 .highlight {

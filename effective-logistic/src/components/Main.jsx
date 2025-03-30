@@ -3,7 +3,7 @@ import { motion, AnimatePresence } from 'framer-motion';
 import './components_css/Main.css';
 import Delivery1 from './components_css/assets/delivery2.png';
 import Logo from './components_css/assets/bazar.jpg';
-import Logo2 from './components_css/assets/directv.png';
+import Logo2 from './components_css/assets/panaderia.jpg';
 import Logo3 from './components_css/assets/tiendaronnie.jpg';
 import Logo4 from './components_css/assets/fournuts.jpg';
 import Logo5 from './components_css/assets/intivibes.jpg';
@@ -44,21 +44,12 @@ function Main() {
           <div className='text-main'>
             <h1 id="inicio">Logística Effective</h1>
             <p className='text-main-p'>
-              Somos los mejores y más&nbsp;
-              <span className='highlight'>
-                <AnimatePresence mode="wait">
-                  <motion.span 
-                    key={words[index]}
-                    initial={{ opacity: 0, y: 20 }}
-                    animate={{ opacity: 1, y: 0 }}
-                    exit={{ opacity: 0, y: 30 }}
-                    transition={{ duration: 0.5 }}
-                  >
-                    {words[index]}
-                  </motion.span>
-                </AnimatePresence>
-              </span> 
-              &nbsp;al enviar pedidos.
+            Somos una empresa con <span className='highlight-2'>experiencia</span> en logística y cadetería, especializada en ofrecer soluciones
+<span className='highlight-2'> rápidas, seguras y eficientes </span> para el transporte y entrega de tus productos y documentos.
+Ya sea que necesites un servicio de mensajería urgente, entregas locales o flota de cadetes para tu negocio,
+estámos listos para <span className='highlight-2'>ayudarte</span>.
+
+¡Contáctanos hoy y descubre cómo podemos facilitar tu logística!
             </p>
               <a href="#contacto" className='btn-main'>Solicitá nuestro servicio</a>
           </div>
@@ -103,7 +94,7 @@ estámos listos para <span className='highlight-2'>ayudarte</span>.
             </div>
             <div className='service'>
               <h2>Flota de cadetes <br />
-              🚗</h2>
+              🛵</h2>
             </div>
           </div>
         </div>
