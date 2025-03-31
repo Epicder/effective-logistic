@@ -1,7 +1,9 @@
 import React from 'react';
 import { motion, AnimatePresence } from 'framer-motion';
+import { Link } from 'react-router-dom';
 import './components_css/Main.css';
 import Delivery1 from './components_css/assets/delivery2.png';
+import Delivery2 from './components_css/assets/delivery.jpg';
 import Logo from './components_css/assets/bazar.jpg';
 import Logo2 from './components_css/assets/panaderia.jpg';
 import Logo3 from './components_css/assets/tiendaronnie.jpg';
@@ -48,35 +50,22 @@ function Main() {
 <span className='highlight-2'> rápidas, seguras y eficientes </span> para el transporte y entrega de tus productos y documentos.
 Ya sea que necesites un servicio de mensajería urgente, entregas locales o flota de cadetes para tu negocio,
 estámos listos para <span className='highlight-2'>ayudarte</span>.
-
 ¡Contáctanos hoy y descubre cómo podemos facilitar tu logística!
             </p>
-              <a href="#contacto" className='btn-main'>Solicitá nuestro servicio</a>
+              <Link to="/contacto" className='btn-main'>Solicitá nuestro servicio</Link>
           </div>
         </div>
-        <div className='content-wave'>
-            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320">
+        <div className='wave-section'>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320">
               <path fill="#db3636" fillOpacity="1" d="M0,32L48,48C96,64,192,96,288,96C384,96,480,64,576,48C672,32,768,32,864,58.7C960,85,1056,139,1152,165.3C1248,192,1344,192,1392,192L1440,192L1440,320L1392,320C1344,320,1248,320,1152,320C1056,320,960,320,864,320C768,320,672,320,576,320C480,320,384,320,288,320C192,320,96,320,48,320L0,320Z"></path>
             </svg>
+        </div>
             <div className='content-text'>
           <h1 id="sobre-nosotros">¿Quiénes somos?</h1>
-          <p>¡Bienvenidos a Logística effective! 📦<br />
-          <br />
-Somos una empresa con <span className='highlight-2'>experiencia</span> en logística y cadetería, especializada en ofrecer soluciones
-<span className='highlight-2'> rápidas, seguras y eficientes </span> para el transporte y entrega de tus productos y documentos.
-Ya sea que necesites un servicio de mensajería urgente, entregas locales o flota de cadetes para tu negocio,
-estámos listos para <span className='highlight-2'>ayudarte</span>.
-
-¡Contáctanos hoy y descubre cómo podemos facilitar tu logística!
-</p>
-        </div>
+            <p className='content-text-p'>¿No te quedó claro quiénes somos?</p>
+          <Link to="/sobre-nosotros" className='btn-main'>Conocé más sobre nosotros</Link>
           </div>
-        <div className='content-images'>
-        <svg viewBox="0 0 1440 590" xmlns="http://www.w3.org/2000/svg" class="transition duration-300 ease-in-out delay-150" className='service-wave'><path d="M 0,600 L 0,150 C 103.21531100478472,120.02870813397129 206.43062200956945,90.05741626794259 311,100 C 415.56937799043055,109.94258373205741 521.4928229665071,159.79904306220095 605,188 C 688.5071770334929,216.20095693779905 749.5980861244019,222.7464114832536 851,216 C 952.4019138755981,209.2535885167464 1094.1148325358852,189.21531100478467 1199,176 C 1303.8851674641148,162.78468899521533 1371.9425837320573,156.39234449760767 1440,150 L 1440,600 L 0,600 Z" stroke="none" stroke-width="0" fill="#db3636" fill-opacity="0.53" class="transition-all duration-300 ease-in-out delay-150 path-0" transform="rotate(-180 720 300)"></path><path d="M 0,600 L 0,350 C 89.96172248803828,356.3636363636364 179.92344497607655,362.7272727272727 265,351 C 350.07655502392345,339.2727272727273 430.26794258373207,309.45454545454544 535,303 C 639.7320574162679,296.54545454545456 769.0047846889952,313.45454545454544 873,331 C 976.9952153110048,348.54545454545456 1055.7129186602872,366.72727272727275 1146,370 C 1236.2870813397128,373.27272727272725 1338.1435406698565,361.6363636363636 1440,350 L 1440,600 L 0,600 Z" stroke="none" stroke-width="0" fill="#db3636" fill-opacity="1" class="transition-all duration-300 ease-in-out delay-150 path-1" transform="rotate(-180 720 300)"></path></svg>
-          <div className='carousel'>
-            <img src={Delivery1} alt="" />
-          </div>
-        </div>
+          
         <div className='services-section'>
           <h1 id='servicio'>Servicios</h1>
           <div className='services'>
@@ -97,7 +86,7 @@ estámos listos para <span className='highlight-2'>ayudarte</span>.
               🛵</h2>
             </div>
           </div>
-        </div>
+        
         <div className='services-text'>
           <p>            
 Somos tu <span className='highlight-3'>socio estratégico</span> en cada paso del proceso, <span className='highlight-3'>comprometidos con el éxito de tu negocio</span>. Nos
@@ -105,6 +94,7 @@ Somos tu <span className='highlight-3'>socio estratégico</span> en cada paso de
 cumpla con los estándares de <span className='highlight-3'>calidad y puntualidad</span> que tus clientes merecen. 
 ¡Estamos aquí para impulsar tu crecimiento y asegurar que tus productos lleguen siempre como lo prometimos!
           </p>
+        </div>
         </div>
         <div className='brands-section'>
         <h1>¿Quiénes confían en nosotros?</h1>
@@ -132,17 +122,11 @@ cumpla con los estándares de <span className='highlight-3'>calidad y puntualida
         empresas que trabajan con nosotros, la tuya podría ser
         <br/>LA MÁS GRANDE!</p>
       </div>
-      <div className='contact-section' id='contacto'>
-        <h1>¿Te interesa Nuestro servicio?</h1>
-        <a href="#contacto" className='btn-main'>Contáctanos</a>
-        <details>
-          <summary>Conocé sobre nuestras tarifas & Zona de entregas</summary>
-          <iframe src="https://docs.google.com/document/d/1AL8VEnznwGl2NhL0lAoFj0-kpNamNyZI/edit?usp=sharing&ouid=111948878459454852790&rtpof=true&sd=true" width="100%" height="700px"></iframe>
-        </details>
-        <details>
-          <summary>¡Conocé más sobre como trabajamos!</summary>
-            <iframe src="https://docs.google.com/document/d/1nN6fs0QlQXOLCC04x3Ndg6e5roM7Yy3b/edit?usp=sharing&ouid=111948878459454852790&rtpof=true&sd=true" width="100%" height="700px"></iframe>
-        </details>
+      <div className='contact-section'>
+        <h1>Contáctanos</h1>
+        <p>¿Te interesó lo que leíste? <br />
+        ¡Contáctanos haciendo click en el botón de abajo!</p>
+        <Link to="/contacto" className='btn-main'>Contáctanos</Link>
       </div>
       <footer>
         <p>© 2025 Logística Effective. Todos los derechos reservados.</p>
