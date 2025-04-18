@@ -5,7 +5,7 @@ import './components_css/Whatsapp.css'
 function Whatsapp() {
   return (
     <div className='whatsapp'>
-      <a href='https://wa.me/' target='_blank' rel='noreferrer'>
+      <a href='https://wa.me/59891952742' target='_blank' rel='noreferrer'>
         <img src={Wsp} alt='Whatsapp'/>
         </a>
     </div>

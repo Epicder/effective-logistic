@@ -14,7 +14,7 @@ import 'slick-carousel/slick/slick.css';
 import 'slick-carousel/slick/slick-theme.css';
 import Slider from 'react-slick';
 
-function Main() {
+const Main = () => {
   const words = ["rápidos", "efectivos", "seguros", "confiables", "convenientes"];
   const [index, setIndex] = React.useState(0);
   
@@ -39,7 +39,12 @@ function Main() {
   };
 
   return (
-    <>
+    <motion.div
+      initial={{ opacity: 0, y: 0 }}
+      animate={{ opacity: 1, y: 0 }}
+      exit={{ opacity: 0, y: -10 }}
+      transition={{ duration: 0.3 }}
+    >
       <div className='content'>
         <div className='parallax1'></div>
         <div className='parallax'>
@@ -56,14 +61,17 @@ estámos listos para <span className='highlight-2'>ayudarte</span>.
           </div>
         </div>
         <div className='wave-section'>
-        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320">
-              <path fill="#db3636" fillOpacity="1" d="M0,32L48,48C96,64,192,96,288,96C384,96,480,64,576,48C672,32,768,32,864,58.7C960,85,1056,139,1152,165.3C1248,192,1344,192,1392,192L1440,192L1440,320L1392,320C1344,320,1248,320,1152,320C1056,320,960,320,864,320C768,320,672,320,576,320C480,320,384,320,288,320C192,320,96,320,48,320L0,320Z"></path>
-            </svg>
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320">
+            <path 
+              fill="#0B243Aff"
+              d="M0,32L48,48C96,64,192,96,288,96C384,96,480,64,576,48C672,32,768,32,864,58.7C960,85,1056,139,1152,165.3C1248,192,1344,192,1392,192L1440,192L1440,320L1392,320C1344,320,1248,320,1152,320C1056,320,960,320,864,320C768,320,672,320,576,320C480,320,384,320,288,320C192,320,96,320,48,320L0,320Z"
+            />
+          </svg>
         </div>
             <div className='content-text'>
-          <h1 id="sobre-nosotros">¿Quiénes somos?</h1>
+          <h2 id="sobre-nosotros">¿Quiénes somos?</h2>
             <p className='content-text-p'>¿No te quedó claro quiénes somos?</p>
-          <Link to="/sobre-nosotros" className='btn-main'>Conocé más sobre nosotros</Link>
+          <Link to="/sobre-nosotros" className='btn-main-2'>Conocé más sobre nosotros</Link>
           </div>
           
         <div className='services-section'>
@@ -131,17 +139,14 @@ cumpla con los estándares de <span className='highlight-3'>calidad y puntualida
       <footer>
         <p>© 2025 Logística Effective. Todos los derechos reservados.</p>
         <p>Correo: <br />
-          <a href="mailto:example@gmail.com">example@gmail.com</a>
+          <a href="mailto:logisticaeffectiveservice@gmail.com">logisticaeffectiveservice@gmail.com</a>
         </p>
         <p>Teléfono: <br />
-          <a href="tel:+5491155555555">+54 9 11 5555-5555</a>
-        </p>
-        <p>Redes: <br />
-          <a href="https://www.facebook.com" target="_blank" rel="noreferrer">Facebook</a> | <a href="https://www.instagram.com" target="_blank" rel="noreferrer">Instagram</a> | <a href="https://www.twitter.com" target="_blank" rel="noreferrer">Twitter</a>
+          <a href="tel:+598 91 952 742">091 952 742</a>
         </p>
       </footer>
       </div>
-    </>
+    </motion.div>
   );
 }
 

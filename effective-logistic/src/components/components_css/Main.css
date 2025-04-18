@@ -41,14 +41,14 @@
 }
 
 .highlight-2 {
-    color: rgb(255, 187, 61);
+    color: #FBB725;
     font-weight: bold;
     padding-top: 2px;
     padding-bottom: 2px;
 }
 
 .highlight-3 {
-    color: #b82c2c;
+    color: #FBB725;
     font-weight: bold;
     padding-top: 2px;
     padding-bottom: 2px;
@@ -64,7 +64,6 @@ h1 {
     font-size: 3.5em;
     line-height: 1.1;
     text-align: center;
-    padding: 10px;
     font-family: 'Questrial', sans-serif;
     color: white;
     text-shadow: 2px 2px 2px #000000a2;
@@ -102,7 +101,7 @@ h2 {
 }
 
 .btn-main:hover {
-    background-color: #ff4d4d;
+    background-color: #0B243A;
     text-decoration: none;
     transform: scale(1.05);
 }
@@ -125,20 +124,21 @@ h2 {
     font-size: 20px;
     margin-top: -20px;
     height: 350px;
+    mask-image: linear-gradient(to bottom, black 85%, transparent 100%);
+    -webkit-mask-image: linear-gradient(to bottom, black 85%, transparent 100%);
 }
 
 .content-text .btn-main {
     position: relative;
     top: 10px;
-    background-color: #b82c2c;
+    background-color: #0B243A;
     padding: 15px;
-
     font-family: 'Questrial', sans-serif;
 }
 
 
 .content-text-p {
-    background-color: #b82c2c;
+    background-color: #0B243A;
     border-radius: 20px;
     padding: 15px;
     width: 30%;
@@ -156,7 +156,7 @@ h2 {
 
 
 .content-text-p {
-    background-color: #b82c2c;
+    background-color: rgb(17, 53, 85);
     border-radius: 20px;
     padding: 15px;
     font-size: 1.4rem;
@@ -164,6 +164,16 @@ h2 {
 
 }
 
+.btn-main-2 {
+  display: inline-block;
+  margin-top: 20px;
+  padding: 10px 20px;
+  background-color: #12395c;
+  color: white;
+  text-decoration: none;
+  border-radius: 5px;
+  transition: background-color 0.3s ease;
+}
 
 .services-section {
     position: relative;
@@ -182,7 +192,7 @@ h2 {
 .service {
     width: 20%;
     height: auto;
-    background-color: #b82c2ccc;
+    background-color: #0B243Acc;
     border-radius: 25px;
     padding-left: 5px;
     padding-right: 5px;
@@ -260,7 +270,7 @@ h2 {
     overflow: hidden;
     width: 90%;
     margin: 0 auto;
-    background-color: #b82c2ccc;
+    background-color: #0B243Acc;
     border-radius: 15px;
 }
 
@@ -369,10 +379,15 @@ footer {
     }
 
     .content-text p {
-        width: 90%;
+        width: 70%;
         margin: 10px auto;
+        font-size: 1.2rem;
     }
 
+    .content-text {
+        height: 500px;
+        top: -200px;
+    }	
     .content-images img {
         width: 100%;
         height: auto;
@@ -444,8 +459,8 @@ footer {
 .form-group input:focus,
 .form-group textarea:focus {
   outline: none;
-  border-color: #db3636;
-  box-shadow: 0 0 5px rgba(219, 54, 54, 0.3);
+  border-color: #0B243A;
+  box-shadow: 0 0 5px rgba(11, 36, 58, 0.3);
 }
 
 /* Sobre Nosotros Styles */
@@ -509,7 +524,7 @@ footer {
 }
 
 .feature-card h3 {
-  color: #db3636;
+  color: #0B243A;
   margin-bottom: 1rem;
   font-size: 1.5rem;
 }
@@ -526,7 +541,7 @@ footer {
 
 .sobre-nosotros-values h2 {
   text-align: center;
-  color: #db3636;
+  color: #0B243A;
   margin-bottom: 3rem;
   font-size: 2.5rem;
 }
@@ -552,7 +567,7 @@ footer {
 }
 
 .value-item h3 {
-  color: #db3636;
+  color: #0B243A;
   margin-bottom: 1rem;
   font-size: 1.5rem;
 }
@@ -563,7 +578,7 @@ footer {
 }
 
 .sobre-nosotros-cta {
-  background: linear-gradient(rgba(219, 54, 54, 0.9), rgba(219, 54, 54, 0.9));
+  background: linear-gradient(rgba(11, 36, 58, 0.9), rgba(11, 36, 58, 0.9));
   padding: 4rem 2rem;
   text-align: center;
   color: white;
@@ -659,7 +674,7 @@ footer {
 }
 
 .contact-info-card h3 {
-  color: #db3636;
+  color: #0B243A;
   margin-bottom: 1rem;
   font-size: 1.5rem;
 }
@@ -682,7 +697,7 @@ footer {
 }
 
 .contact-form-container h2 {
-  color: #db3636;
+  color: #0B243A;
   margin-bottom: 1rem;
   font-size: 2.5rem;
 }
@@ -725,8 +740,8 @@ footer {
 .form-group input:focus,
 .form-group textarea:focus {
   outline: none;
-  border-color: #db3636;
-  box-shadow: 0 0 5px rgba(219, 54, 54, 0.3);
+  border-color: #0B243A;
+  box-shadow: 0 0 5px rgba(11, 36, 58, 0.3);
 }
 
 .form-group textarea {
@@ -735,7 +750,7 @@ footer {
 }
 
 .contact-cta {
-  background: linear-gradient(rgba(219, 54, 54, 0.9), rgba(219, 54, 54, 0.9));
+  background: linear-gradient(rgba(11, 36, 58, 0.9), rgba(11, 36, 58, 0.9));
   padding: 4rem 2rem;
   text-align: center;
   color: white;
@@ -839,7 +854,7 @@ footer {
 }
 
 .tarifa-card h3 {
-  color: #db3636;
+  color: #0B243A;
   margin-bottom: 1rem;
   font-size: 1.5rem;
 }
@@ -865,7 +880,7 @@ footer {
 
 .tarifa-card ul li:before {
   content: "✓";
-  color: #db3636;
+  color: #0B243A;
   position: absolute;
   left: 0;
 }
@@ -879,7 +894,7 @@ footer {
 .tarifas-details h2,
 .tarifas-how-we-work h2 {
   text-align: center;
-  color: #db3636;
+  color: #0B243A;
   margin-bottom: 3rem;
   font-size: 2.5rem;
 }
@@ -901,7 +916,7 @@ footer {
 }
 
 .tarifas-cta {
-  background: linear-gradient(rgba(219, 54, 54, 0.9), rgba(219, 54, 54, 0.9));
+  background: linear-gradient(rgba(11, 36, 58, 0.9), rgba(11, 36, 58, 0.9));
   padding: 4rem 2rem;
   text-align: center;
   color: white;
@@ -935,5 +950,163 @@ footer {
 
   .tarifas-hero-content p {
     font-size: 1rem;
+  }
+}
+
+/* Responsive Styles */
+@media (max-width: 1200px) {
+  .text-main {
+    width: 70%;
+  }
+
+  .services {
+    flex-wrap: wrap;
+  }
+
+  .service {
+    width: 45%;
+  }
+
+  .brands {
+    width: 95%;
+  }
+}
+
+@media (max-width: 768px) {
+  .text-main {
+    width: 85%;
+  }
+
+  .text-main-p {
+    font-size: 1.2rem;
+  }
+
+  .content-text {
+    height: auto;
+    padding: 20px;
+  }
+
+  .content-text-p {
+    width: 80%;
+  }
+
+  .services {
+    flex-direction: column;
+  }
+
+  .service {
+    width: 80%;
+  }
+
+  .services-text {
+    width: 80%;
+  }
+
+  .brands {
+    flex-direction: column;
+  }
+
+  .brand img {
+    width: 120px;
+    height: 120px;
+  }
+
+  .contact-section a {
+    width: 50%;
+  }
+
+  h1 {
+    font-size: 1.5em;
+  }
+
+  h2 {
+    font-size: 1.4em;
+  }
+}
+
+@media (max-width: 480px) {
+  .text-main {
+    width: 95%;
+  }
+
+  .text-main-p {
+    font-size: 1rem;
+  }
+
+  .content-text-p {
+    width: 80%;
+  }
+
+
+  .service {
+    width: 90%;
+  }
+
+  .services-text {
+    width: 90%;
+  }
+
+  .brand img {
+    width: 100px;
+    height: 100px;
+  }
+
+  .contact-section a {
+    width: 80%;
+  }
+
+  h1 {
+    font-size: 2em;
+  }
+
+  h2 {
+    font-size: 1.2em;
+  }
+
+  .btn-main {
+    width: 200px;
+    font-size: 16px;
+  }
+
+  .btn-main-2 {
+    width: 140px;
+    font-size: 14px;
+  }
+
+  .brands-section h1 {
+    font-size: 2.6em;
+  }
+
+  .brands-section p {
+    font-size: 1.3rem;
+  }
+
+  .contact-section h1 {
+    font-size: 2.6em;
+  }
+
+  .contact-section p {
+    font-size: 1.3rem;
+  }
+
+}
+
+/* Fix for wave section on mobile */
+@media (max-width: 768px) {
+  .wave-section {
+    top: -200px;
+  }
+
+  .wave-section svg {
+    width: 100%;
+    height: auto;
+  }
+}
+
+/* Fix for content text fade on mobile */
+@media (max-width: 768px) {
+  .content-text {
+    mask-image: linear-gradient(to bottom, black 90%, transparent 100%);
+    -webkit-mask-image: linear-gradient(to bottom, black 90%, transparent 100%);
   }
 }
