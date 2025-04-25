@@ -141,6 +141,10 @@ cumpla con los estándares de <span className='highlight-3'>calidad y puntualida
         <p>Correo: <br />
           <a href="mailto:logisticaeffectiveservice@gmail.com">logisticaeffectiveservice@gmail.com</a>
         </p>
+        <a href="https://instagram.com/effective.service" target="_blank" rel="noopener noreferrer">Instagram 📸</a>
+        <br />
+        <br />
+        <a href="https://www.facebook.com/effective.service" target="_blank" rel="noopener noreferrer">Facebook 🔗</a>
         <p>Teléfono: <br />
           <a href="tel:+598 91 952 742">091 952 742</a>
         </p>

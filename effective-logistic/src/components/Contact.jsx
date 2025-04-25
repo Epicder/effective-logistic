@@ -1,8 +1,10 @@
-import React, { useState } from 'react';
+import React, { useState, useRef } from 'react';
 import './components_css/Main.css';
 import { motion } from 'framer-motion'
+import emailjs from '@emailjs/browser';
 
 function Contact() {
+  const form = useRef();
   const [formData, setFormData] = useState({
     name: '',
     email: '',
@@ -12,13 +14,20 @@ function Contact() {
 
   const handleSubmit = (e) => {
     e.preventDefault();
-    console.log('Form submitted:', formData);
-    setFormData({
-      name: '',
-      email: '',
-      phone: '',
-      message: ''
-    });
+    
+    emailjs.sendForm('service_e8n4c9r', 'template_895pchy', form.current, 'VluzSgYbHUrDsq5lz')
+      .then((result) => {
+        console.log('Email sent successfully:', result.text);
+        setFormData({
+          name: '',
+          email: '',
+          phone: '',
+          message: ''
+        });
+      })
+      .catch((error) => {
+        console.error('Error sending email:', error);
+      });
   };
 
   const handleChange = (e) => {
@@ -70,7 +79,7 @@ function Contact() {
             <h2>Envíanos un mensaje</h2>
             <p className='form-description'>Cuéntanos sobre tu proyecto y te responderemos a la brevedad</p>
             
-            <form onSubmit={handleSubmit} className='contact-form'>
+            <form ref={form} onSubmit={handleSubmit} className='contact-form'>
               <div className='form-group'>
                 <label htmlFor="name">Nombre completo</label>
                 <input
